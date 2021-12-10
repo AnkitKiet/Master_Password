@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1024.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="1024.0">
+         <items>
+            <JFXHamburger fx:id="hamburger" />
+         </items>
+      </ToolBar>
+      <TableView fx:id="table" layoutX="176.0" layoutY="64.0" prefHeight="489.0" prefWidth="656.0">
+              <columns>
+                <TableColumn fx:id="username" prefWidth="151.0" text="username" />
+                  <TableColumn fx:id="password" prefWidth="111.0" text="password" />
+                <TableColumn fx:id="website" prefWidth="88.0" text="website" />
+              </columns>
+            </TableView>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutY="40.0" prefHeight="611.0" prefWidth="197.0" />
+      <JFXButton fx:id="btn" layoutX="370.0" layoutY="597.0" onAction="#onClick" text="click" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

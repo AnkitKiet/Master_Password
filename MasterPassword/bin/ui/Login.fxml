@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseClicked="#registerUser" prefHeight="337.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Pane prefHeight="346.0" prefWidth="529.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXTextField fx:id="edtEmail" focusColor="#09b6bc" labelFloat="true" layoutX="140.0" layoutY="111.0" prefHeight="25.0" prefWidth="215.0" promptText="Emai-Id" />
+            <JFXPasswordField fx:id="edtPassword" focusColor="#09b6bc" labelFloat="true" layoutX="140.0" layoutY="161.0" prefHeight="25.0" prefWidth="215.0" promptText="Password" />
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="169.0" layoutY="216.0" onAction="#validateUser" prefHeight="27.0" prefWidth="157.0" ripplerFill="#59b7ff" style="-fx-background-color: #2196F3;" text="Login" textAlignment="CENTER" textFill="WHITE" />
+            <Label layoutX="131.0" layoutY="20.0" text="Welcome To One Password" textAlignment="CENTER" textFill="#5a91ff" underline="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnSignUp" buttonType="RAISED" layoutX="132.0" layoutY="249.0" onAction="#registerUser" prefHeight="27.0" prefWidth="227.0" ripplerFill="WHITE" text="New User? SignUp Here" textAlignment="CENTER" textFill="#70d65a">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></JFXButton>
+         </children>
+         <effect>
+            <InnerShadow color="#5a91ff" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

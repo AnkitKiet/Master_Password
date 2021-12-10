@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="520.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignUPController">
+   <children>
+      <JFXButton fx:id="btnLogin" layoutX="144.0" layoutY="282.0" onAction="#backToLogin" ripplerFill="WHITE" style="-fx-background-color: #ffffff;" text="Already registered? Login Here" textFill="#70d65a">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="176.0" layoutY="244.0" onAction="#register_check" prefHeight="27.0" prefWidth="157.0" ripplerFill="#bbdefb" style="-fx-background-color: #2196F3;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="edtCpassword" focusColor="DEEPSKYBLUE" labelFloat="true" layoutX="148.0" layoutY="196.0" prefHeight="25.0" prefWidth="217.0" promptText="Confirm Password" />
+      <JFXPasswordField fx:id="edtPassword" focusColor="DEEPSKYBLUE" labelFloat="true" layoutX="148.0" layoutY="156.0" prefHeight="25.0" prefWidth="217.0" promptText="Password" />
+      <JFXTextField fx:id="edtEmail" focusColor="#00bfff" labelFloat="true" layoutX="149.0" layoutY="111.0" prefHeight="25.0" prefWidth="215.0" promptText="Email-id" />
+      <JFXTextField fx:id="edtName" focusColor="#00bfff" labelFloat="true" layoutX="149.0" layoutY="71.0" prefHeight="25.0" prefWidth="215.0" promptText="Full Name" />
+      <Label layoutX="299.0" layoutY="47.0" text="Fill Details (*All Details Are Mandatory)" textAlignment="CENTER" textFill="#ffd000">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="24.0" text="Get Registered With One Password" textFill="#5a91ff" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow color="#5a91ff" />
+   </effect>
+</Pane>
